@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prociono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hello {
+    color: red;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(3, 3, 47);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    margin-top: -120px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    transition: all 300ms ease;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(152, 152, 255);
+        scale: 1.1;
+    }
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+}
+
+.purple {
+    color: aqua;
+}
+.rightsection .lottie{
+    width: 90%;
+}
+
+.about {
+    width: 100%;
+    height: 15svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 2.2rem;
+    color: white
+}
+
+.container {
+    width: 100%;
+    height: 110svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .left {
+    background-color: white;
+    width: 35%;
+    height: 80svh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 2px aqua;
+
+}
+
+.container .left .image {
+    width: 42%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 30%;
+    margin-top: -20%;
+    border: 2px solid aqua;
+    animation: logo ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.container .left .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container .left .name {
+    width: 100%;
+    height: 8svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .left .name p {
+    font-size: 22px;
+    color: black;
+    font-family: "Nunito Sans", serif;
+    font-weight: 600;
+    animation: name ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.container .left .role {
+    width: 100%;
+    height: 3svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .left .role p {
+    font-size: 15px;
+    color: blue;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    animation: text ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.container .left .description {
+    width: 90%;
+    height: 25svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.container .left .description p {
+    font-size: 15px;
+    color: grey;
+    font-family: "Poppins", serif;
+    animation: des ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.container .left .social {
+    width: 50%;
+    height: 8svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 24%;
+}
+
+.container .left .social a {
+    color: grey;
+    font-size: 18px;
+    transition: all 300ms ease;
+
+    &:hover {
+        color: black;
+        scale: 1.1;
+    }
+}
+
+.container .left .resume {
+    width: 100%;
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left .resume a {
+    width: 40%;
+    height: 60%;
+}
+
+.container .left .resume button {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms ease;
+    border: none;
+
+    &:hover {
+        background-color: aqua;
+        cursor: pointer;
+        color: black;
+        scale: 1.03;
+    }
+}
+
+.container .right {
+    width: 40%;
+    height: 80svh;
+    border-radius: 30px;
+}
+
+.right .heading {
+    width: 30%;
+    height: 10svh;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.right .heading p {
+    font-size: 22px;
+}
+
+.right .description {
+    color: aqua;
+    font-size: 16px;
+    margin-top: 10px;
+    animation: skilling ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.right .skill {
+    width: 100%;
+    height: 10svh;
+    display: flex;
+    align-items: center;
+}
+
+.right .skill p {
+    font-size: 22px;
+}
+
+.right .skillset ul {
+    width: 100%;
+    height: 20svh;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.right .skillset ul li {
+    color: aqua;
+    font-size: 16px;
+    margin-top: 10px;
+    animation: skilling ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 4%;
+}
+
+.Skills {
+    width: 100%;
+    height: 15svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills h1 {
+    font-size: 2.2rem;
+    color: black
+}
+
+.skillsection {
+    background-color: black;
+    width: 80%;
+    height: 84svh;
+    margin-left: 10%;
+    border-radius: 30px;
+    padding-top: 20px;
+    animation: skilling ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.skillsection .skill1 {
+    width: 100%;
+    height: 10svh;
+}
+
+.skill1 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill2 {
+
+    width: 100%;
+    height: 10svh;
+    margin-top: 10px;
+}
+
+.skill2 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill3 {
+    width: 100%;
+    margin-top: 10px;
+    height: 10svh;
+}
+
+.skill3 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill4 {
+    width: 100%;
+    margin-top: 10px;
+    height: 10svh;
+}
+
+.skill4 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill5 {
+
+    width: 100%;
+    margin-top: 10px;
+    height: 10svh;
+}
+
+.skill5 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill6 {
+    width: 100%;
+    margin-top: 10px;
+    height: 10svh;
+}
+
+.skill6 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.skillsection .skill7 {
+    width: 100%;
+    margin-top: 10px;
+    height: 10svh;
+}
+
+.skill7 .skillname {
+    width: 78%;
+    height: 5svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 130px;
+}
+.certificates{
+    width: 100%;
+    height: 15svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certificates h1{
+    font-size: 2.2rem;
+}
+.certificatecontainer{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 11px;
+}
+.certificatecontainer .certified{
+    width: 400px;
+    height: 160px;
+    gap: 11px;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    transition: all 300ms ease;
+    animation: skilling ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+        transform: translateY(-10px);
+    }
+    
+}
+.certificatecontainer .certified .badge{
+    width:30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certificatecontainer .certified .certificatedetails{
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.certificatecontainer .certified .certificatedetails .certificatename{
+    width: 100%;
+    height: 8svh;
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;  
+}
+.certificatecontainer .certified .certificatedetails .certificatename p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.certificatecontainer .certified .certificatedetails .companyname{
+    width: 100%;
+    height: 4svh;
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;  
+}
+.certificatecontainer .certified .certificatedetails .companyname p{
+    font-size: 15px;
+}
+.certificatecontainer .certified .certificatedetails .dateandview{
+    width: 100%;
+    height: 11svh;
+}
+.projectsection {
+    width: 100%;
+    height: 90svh;
+    position: relative;
+
+}
+
+.projectsection .project {
+    width: 100%;
+    height: 20svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project h1 {
+    font-size: 2.2rem;
+}
+
+.projectsection .projectcontainer {
+    width: 100%;
+    height: 60svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectcontainer .projects {
+    width: 30%;
+    height: 65svh;
+    background-color: white;
+    border-radius: 25px;
+    transition: all 300ms ease;
+    &:hover {
+        transform: translateY(-20px);
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 10px blueviolet;
+    }   
+    animation: skilling ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
+}
+
+.projectcontainer .projects .images {
+    width: 100%;
+    height: 45svh;
+    border: 3px solid white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: black;
+}
+.projectcontainer .projects .names{
+    width: 100%;
+    height: 6svh;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+    font-weight: 600;
+}
+.projectcontainer .projects .descriptions{
+    width: 100%;
+    height: 5svh;
+    color: gray;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.projectcontainer .projects .links{
+    width: 100%;
+    height: 8svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.projectcontainer .projects .links .github{
+    width: 40%;
+    height: 7svh;
+    border-radius: 30px;
+    background-color: blue;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+        background-color: aqua;
+    }
+    &:hover a{
+        color: black;
+    }
+}
+.projectcontainer .projects .links .github a{
+    text-decoration: none;
+    color: white;
+}
+.contact{
+    width: 100%;
+    height: 20svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact h1{
+    font-size: 2.2rem;
+    color: black;
+}
+.contactcontainer{
+    width: 70%;
+    height: 78svh;
+    background-color: rgb(0, 0, 33);
+    margin-left: 15%;
+    border-radius: 25px;
+    display: flex;
+}
+.contactcontainer .left{
+    width: 40%;
+    height: 100%;
+}
+.contactcontainer .left .name{
+    width: 100%;
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.contactcontainer .left .form{
+    width: 100%;
+    height: 24svh;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.contactcontainer .left .form .email{
+    width: 100%;
+    height: 8svh;
+    display: flex;
+}
+.contactcontainer .left .form .email #emailname{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contactcontainer .right{
+    width: 60%;
+    height: 100%;
+}
+@keyframes logo {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes name{
+    from{
+        transform: translateX(-120px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes text{
+    from{
+        transform: translateX(-140px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes des{
+    from{
+        transform: translateX(-120px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes skilling{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@media ((min-width: 375px) and (max-width: 420px)){
+    .left {
+        font-size: 25px;
+        position: absolute;
+        left: 23%;
+    }   
+    nav ul li{
+        display: none;
+    }
+    .leftsection {
+        font-size: 20px;
+        height: 50svh;
+        width: 190%;
+    }
+    .rightsection .lottie{
+        position: absolute;
+        width: 50%;
+        left: 30%;
+        top: 50%;
+    }
+    .firstsection div {
+        width: 190%;
+    }
+}
