@@ -15,7 +15,7 @@ import { GiAchievement } from "react-icons/gi";
 import { Data } from "./projectsdata";
 import { Certificate } from "./certificates";
 
-import resume from "../MyResume/Ankit Roy Chowdhury.pdf"
+import resume from "../MyResume/Ankit_Roy_Chowdhury (3).pdf"
 const Portfolio = () => {
 
     return(
